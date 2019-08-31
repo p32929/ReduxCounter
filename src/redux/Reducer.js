@@ -1,6 +1,10 @@
 import {createStore} from 'redux'
 
-function reducer(state = {count: 0}, action) {
+var store = {
+    count: 0
+}
+
+function reducer(state = store, action) {
     switch (action.type) {
         case 'INCREMENT':
             return {
